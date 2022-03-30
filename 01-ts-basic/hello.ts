@@ -10,3 +10,6 @@ greet("魏泽", new Date());
 // message = "hello world!";
 // message = 100;//error : 不能将类型“number”分配给类型“string”
 
+let surname: string = undefined;
+let age: number = null;
+
