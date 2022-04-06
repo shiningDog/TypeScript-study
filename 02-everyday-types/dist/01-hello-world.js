@@ -1,4 +1,3 @@
-"use strict";
-let str = "hello typescript";
-let num = 100;
-let bool = true;
+var str = "hello typescript";
+var num = 100;
+var bool = true;

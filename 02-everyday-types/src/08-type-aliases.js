@@ -1,3 +1,4 @@
+"use strict";
 // 类型别名
 // type Point = {
 //   x: number;

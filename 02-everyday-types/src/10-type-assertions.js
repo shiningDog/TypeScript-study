@@ -1,3 +1,4 @@
+"use strict";
 // // 断言 建议使用 as
 // const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
 // const myCanvas2 = <HTMLCanvasElement>document.getElementById("main_canvas");

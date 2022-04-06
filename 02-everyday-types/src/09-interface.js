@@ -1,9 +1,10 @@
+"use strict";
 function printPoint(pt) {
     console.log(pt.x + " ----  " + pt.y);
 }
 printPoint({
     x: 100,
-    y: 200
+    y: 200,
 });
 // interface 可以通过 exteds 继承 start
 // interface Animal {

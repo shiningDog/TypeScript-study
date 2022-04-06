@@ -1,3 +1,4 @@
+"use strict";
 // 联合类型
 // function printId(id: string | number) {
 //   // console.log(`your id is ${id}`);
