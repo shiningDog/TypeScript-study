@@ -1,19 +1,19 @@
+"use strict";
 function printCoord(pt) {
-    console.log("\u5750\u6807\u7684x\u503C\u4E3A: ".concat(pt.x));
-    console.log("\u5750\u6807\u7684y\u503C\u4E3A: ".concat(pt.y));
+    console.log(`坐标的x值为: ${pt.x}`);
+    console.log(`坐标的y值为: ${pt.y}`);
 }
 printCoord({
     x: 11.1,
-    y: 22.3
+    y: 22.3,
 });
 function printName(obj) {
-    var _a;
-    console.log(obj.first + ((_a = obj.last) === null || _a === void 0 ? void 0 : _a.toUpperCase()));
+    console.log(obj.first + obj.last?.toUpperCase());
 }
 printName({
-    first: "shining"
+    first: "shining",
 });
 printName({
     first: "shining",
-    last: "Dog"
+    last: "Dog",
 });

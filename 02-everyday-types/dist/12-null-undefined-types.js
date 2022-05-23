@@ -1,3 +1,4 @@
+"use strict";
 // null 与 undefined
 // let x = undefined;
 // let y: undefined = undefined;

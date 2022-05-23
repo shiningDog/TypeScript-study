@@ -1,6 +1,6 @@
 // 枚举
 enum Direction {
-  Up,
+  Up = 1, //不设置的话，默认对应的标识为0
   Down,
   Left,
   Right,

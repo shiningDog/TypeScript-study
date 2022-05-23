@@ -1,3 +1,4 @@
+"use strict";
 // /** 文字类型 */
 // let testString = "hello world";
 // testString = "魏泽";

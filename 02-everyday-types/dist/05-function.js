@@ -1,5 +1,6 @@
+"use strict";
 function greet(name) {
-    console.log("hello ".concat(name.toUpperCase(), " "));
+    console.log(`hello ${name.toUpperCase()} `);
 }
 greet("weize");
 function getFavoreteNumber1() {
@@ -8,10 +9,10 @@ function getFavoreteNumber1() {
 function getFavoreteNumber2() {
     return 26;
 }
-var names = ["小兰", "小红", "小张"];
+const names = ["小兰", "小红", "小张"];
 names.forEach(function (s) {
     console.log(s.toUpperCase());
 });
-names.forEach(function (s) {
+names.forEach((s) => {
     console.log(s.toUpperCase());
 });

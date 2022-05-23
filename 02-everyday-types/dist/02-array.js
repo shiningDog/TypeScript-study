@@ -1,4 +1,5 @@
-var arr = [1, 2, 3];
+"use strict";
+let arr = [1, 2, 3];
 // arr = ['a']
-var arr2 = [1, 2, 3];
+let arr2 = [1, 2, 3];
 // arr2 = [];
