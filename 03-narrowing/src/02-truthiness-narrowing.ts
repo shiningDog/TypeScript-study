@@ -1,4 +1,3 @@
-// 真值缩小
 function printAll(strs: string | string[] | null) {
   if (strs && typeof strs === "object") {
     //使用 真 值缩小，strs && typeof strs === "object"
@@ -12,7 +11,7 @@ function printAll(strs: string | string[] | null) {
     // ...
   }
 }
-
+// 真值缩小
 function multuplyAll(values: number[] | undefined, factor: number) {
   if (!values) {
     return values;
