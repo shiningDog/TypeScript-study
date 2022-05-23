@@ -6,17 +6,17 @@
 //   sideLenght?: number;
 // }
 
-interface Circle {
-  kind: "circle";
-  redius: number;
-}
+// interface Circle {
+//   kind: "circle";
+//   redius: number;
+// }
 
-interface Square {
-  kind: "square";
-  sideLenght: number;
-}
+// interface Square {
+//   kind: "square";
+//   sideLenght: number;
+// }
 
-type Shape = Circle | Square;
+// type Shape = Circle | Square;
 
 // function handleShape(shape:Shape){
 //   if(shape.kind === 'square'){
@@ -42,13 +42,13 @@ type Shape = Circle | Square;
 // }
 
 // 使用类型谓词来进行判断
-function isCircle(shape: Shape): shape is Circle {
-  return shape.kind === "circle";
-}
-function getArea(shape: Shape) {
-  if (isCircle(shape)) {
-    return Math.PI * shape.redius ** 2;
-  } else {
-    return 4 * shape.sideLenght;
-  }
-}
+// function isCircle(shape: Shape): shape is Circle {
+//   return shape.kind === "circle";
+// }
+// function getArea(shape: Shape) {
+//   if (isCircle(shape)) {
+//     return Math.PI * shape.redius ** 2;
+//   } else {
+//     return 4 * shape.sideLenght;
+//   }
+// }

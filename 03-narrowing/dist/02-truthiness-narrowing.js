@@ -1,5 +1,4 @@
 "use strict";
-// 真值缩小
 function printAll(strs) {
     if (strs && typeof strs === "object") {
         //使用 真 值缩小，strs && typeof strs === "object"
@@ -15,6 +14,7 @@ function printAll(strs) {
         // ...
     }
 }
+// 真值缩小
 function multuplyAll(values, factor) {
     if (!values) {
         return values;
