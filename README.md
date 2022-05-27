@@ -2,11 +2,9 @@ typescript study
 
 env configuration
 
-<ul>
-  <li>vscode</li>
-  <li>node</li>
-  <li>typesciprt</li>
-</ul>
+* vscode
+* node
+* typesciprt
 
 install
 
@@ -17,10 +15,10 @@ npm install typescript -g
 common directive
 
 ```js
-// creat tsconfig.json
+// 创建 tsconfig.json 配置文件
 tsc --init
 
-// watch
+// 监听文件
 tsc --watch
 
 // 发出错误(编译错误时，不产生js文件)
