@@ -17,13 +17,13 @@
 // const f = fun(Ctor, "hello");
 // console.log(f.s);
 
-// 怎么使用联合签名
-interface CallOrConstructor {
-  new (s: string): Date; // 构造签名
-  (n?: number): number; // 调用签名
-}
+// // 怎么使用联合签名
+// interface CallOrConstructor {
+//   new (s: string): Date; // 构造签名
+//   (n?: number): number; // 调用签名
+// }
 
-function fn(data: CallOrConstructor) {
-  let d = new data("2022-05-27");
-  let n = data(100);
-}
+// function fn(data: CallOrConstructor) {
+//   let d = new data("2022-05-27");
+//   let n = data(100);
+// }

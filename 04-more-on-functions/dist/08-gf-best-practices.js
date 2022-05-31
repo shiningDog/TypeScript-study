@@ -22,11 +22,11 @@ function filter2(arr, func) {
 // 3.如果一个类型的参数只出现在一个地方，请重新考虑你是否真的需要它
 // 推荐写法，简单明了
 function greet1(s) {
-    console.log("hello " + s);
+    console.log("hello" + s);
 }
 greet1("world");
 // 不推荐，类型参数只在一处地方用到过，使用greet1的写法更好让ts进行推断
 function greet2(s) {
-    console.log("hello " + s);
+    console.log("hello" + s);
 }
 greet2("world");
