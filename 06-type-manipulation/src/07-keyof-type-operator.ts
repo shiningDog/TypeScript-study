@@ -1,4 +1,4 @@
-// 泛型 keypof类型操作符
+// keypof类型操作符
 
 // type Point = {
 //   x: number;

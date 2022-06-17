@@ -1,4 +1,4 @@
-// 泛型 typeof类型操作符
+// typeof类型操作符
 
 // console.log(typeof "hello");
 

@@ -1,5 +1,5 @@
 "use strict";
-// 泛型 keypof类型操作符
+// keypof类型操作符
 const a1 = 0;
 const a2 = 1;
 const m1 = 0;
