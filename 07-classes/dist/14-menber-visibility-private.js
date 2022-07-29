@@ -14,13 +14,11 @@
 // const d = new Derived();
 // // console.log(d.x);//属性“x”为私有属性，只能在类“Base”中访问。
 // d.printX();
-class A {
-    constructor() {
-        this.x = 10;
-    }
-    sameAs(other) {
-        return other.x === this.x;
-    }
-}
-const a = new A();
-console.log(a.sameAs(new A()));
+// class A {
+//   private x = 10;
+//   public sameAs(other: A) {
+//     return other.x === this.x;
+//   }
+// }
+// const a = new A();
+// console.log(a.sameAs(new A()));
