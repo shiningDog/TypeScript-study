@@ -1,6 +1,6 @@
 // 泛型函数-限制条件
-// <Type extends { length: number }>强制Type拥有length属性，否则函数体内分支报错
-function longest<Type extends { length: number }>(a: Type, b: Type) {
+// <T extends { length: number }>强制T拥有length属性，否则函数体内分支报错
+function longest<T extends { length: number }>(a: T, b: T) {
   if (a.length > b.length) {
     return a;
   } else {
@@ -9,4 +9,4 @@ function longest<Type extends { length: number }>(a: Type, b: Type) {
 }
 const longerArray = longest([1, 2], [2, 3, 4]);
 const longerString = longest("felix", "lu");
-// const notOk = longest(10, 100);//error 由于限制Type必须得有length属性，所有报错
+// const notOk = longest(10, 100);//error 由于限制T必须得有length属性，所有报错

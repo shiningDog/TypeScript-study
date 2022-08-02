@@ -1,8 +1,8 @@
 // // 泛型函数-使用受限值
-// function minimumLength<Type extends { length: number }>(
-//   obj: Type,
+// function minimumLength<T extends { length: number }>(
+//   obj: T,
 //   minimum: number
-// ): Type {
+// ): T {
 //   if (obj.length > minimum) {
 //     return obj;
 //   } else {
