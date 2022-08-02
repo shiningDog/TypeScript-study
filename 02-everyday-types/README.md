@@ -4,7 +4,7 @@
 
 # 定义数据类型
 
-```js
+```ts
 let str: string = "hello typescript";
 let num: number = 100;
 let bool: boolean = true;
@@ -19,7 +19,7 @@ function greet(name: string): string {
 
 # 联合类型
 
-```js
+```ts
 function printId(id: string | number) {};
 function welcomePeople(x: string[] | string) {};
 function getFirshThree(x: number[] | string) {}；
@@ -27,7 +27,7 @@ function getFirshThree(x: number[] | string) {}；
 
 # 类型别名（自定义类型）
 
-```js
+```ts
 type Point = {
   x: number,
   y: number,
@@ -45,7 +45,7 @@ printPoint({
 
 # 接口
 
-```js
+```ts
 interface Pointy {
   y: number;
 }
@@ -70,7 +70,7 @@ printPoint(pt);
 
 # 类型
 
-```js
+```ts
 // type 可以通过 & 符号继承  ---end
 type Animal = {
   name: string,
@@ -88,7 +88,7 @@ const bear: Bear = {
 
 # 断言
 
-```js
+```ts
 // 建议使用 as
 // const myCanvas2 = <HTMLCanvasElement> document.getElementById("main_canvas");
 const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
@@ -105,7 +105,7 @@ let x = "hello" as any as number;
 
 # 文字类型
 
-```js
+```ts
 function hanlderRequest(url: string, method: "GET" | "POST" | "GUSS") {}
 const req = {
   url: "https://example.com",
@@ -133,7 +133,7 @@ hanlderRequest(req.url, req.method); //error req.method 是string类型，不是
 
 # null undefined
 
-```js
+```ts
 function liveDangerously(x?: number | null | undefined) {
   console.log(x!.toFixed()); //仅当你知道这个值不可能是null或者undefined时去使用，并使其正常编译，但会出现意想不到的问题
   console.log(x?.toFixed()); //等价于三元表达式，使其正常编译，正常运行
@@ -144,7 +144,7 @@ liveDangerously();
 
 # 枚举
 
-```js
+```ts
 enum Direction {
   Up = 1, //不设置的话，默认对应的标识为0
   Down,
@@ -166,7 +166,7 @@ console.log(Direction.Up);//1
 
 # bigint（比较大的数字）
 
-```js
+```ts
 const oneHundred: bigint = BigInt(100);
 const anotherHundred: bigint = 100n; //注意：这里需要将配置文件中的target设置为es2020，不然兼容不了bugint
 
@@ -175,7 +175,7 @@ const anotherHundred: bigint = 100n; //注意：这里需要将配置文件中�
 
 # Symbol（唯一值）
 
-```js
+```ts
 const firstName = Symbol("name");
 const secondName = Symbol("name");
 if (firstName === secondName) {

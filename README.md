@@ -1,18 +1,18 @@
-typescript study
+typescript 学习（基础篇）
 
-env configuration
+环境依赖
 
 * vscode
 * node
 * typesciprt
 
-install
+安装
 
 ```js
 npm install typescript -g
 ```
 
-common directive
+常用指令
 
 ```js
 // 创建 tsconfig.json 配置文件
@@ -26,3 +26,14 @@ tsc -noEmitOnError hello.ts
 or
 tsc -noEmitOnError --watch
 ```
+
+目录介绍
+ 
+* typescript 介绍及入门
+* 常用类型
+* 类型缩小
+* 函数
+* 对象类型
+* 类型操纵
+* 类
+* 模块

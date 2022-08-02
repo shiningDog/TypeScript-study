@@ -4,7 +4,7 @@
 
 # 类型守卫
 
-```js
+```ts
 function printAll(strs: string | string[] | null) {
   // 使用分支进行类型守卫，保证类型的确定性
   if (typeof strs === "object") {
@@ -22,7 +22,7 @@ function printAll(strs: string | string[] | null) {
 
 # 真值缩小
 
-```js
+```ts
  // 使用分支和boolean值的类型守卫，来保证类型的确定性
 function printAll(strs: string | string[] | null) {
   //使用 真值（boolean）缩小，strs && ...
@@ -48,7 +48,7 @@ function multuplyAll(values: number[] | undefined, factor: number) {
 
 # 等值缩小
 
-```js
+```ts
 function example(x: string | number, y: string | boolean) {
   if (x === y) {
     console.log(x.toUpperCase() + y.toUpperCase());
@@ -75,7 +75,7 @@ multiplyValue({ value: null }, 6);
 
 # in 操作符缩小
 
-```js
+```ts
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
 type Human = { swim?: () => void; fly?: () => void };
@@ -89,7 +89,7 @@ function move(animal: Fish | Bird | Human) {
 
 # instanceof 操作符缩小
 
-```js
+```ts
 function logValue(x: Date | string) {
   // 判断 是Date类型
   if (x instanceof Date) {
@@ -105,7 +105,7 @@ logValue("hello ts");
 
 # 分配缩小
 
-```js
+```ts
 let x = Math.random() < 0.5 ? 10 : "hello ts";
 x = 1;
 console.log(x);
@@ -117,7 +117,7 @@ x = true; //error 不能将类型“boolean”分配给类型“string | number�
 
 # 控制流分析
 
-```js
+```ts
 function example() {
   let x: string | number | boolean;
   x = Math.random() < 0.5;
@@ -140,7 +140,7 @@ x = true; //error 不能将类型“boolean”分配给类型“string | number�
 
 # 使用类型谓词
 
-```js
+```ts
 // 个人理解：当你想去判断对象类型或接口时，你应该使用类型谓词 paramsName(参数名称) is type(类型)
 type Fish = {
   name: string;
@@ -195,7 +195,7 @@ const underWater3: Fish[] = zoo.filter((pet): pet is Fish => {
 
 # 受歧视的 unions（联合类型）
 
-```js
+```ts
 interface Circle {
   kind: "circle";
   redius: number;
@@ -241,7 +241,7 @@ function getArea(shape: Shape) {
 
 # never 类型与穷尽性检查
 
-```js
+```ts
 // never (不应该存在的状态，如永远是空的值，或永远都抛出一个错误时候)，便于检查
 // // never 是所有类型的子类型,所以never可以分配给每个类型，但没有任何类型可以分配给never，除本身以外,便于进行与穷尽性检查
 interface Circle {
