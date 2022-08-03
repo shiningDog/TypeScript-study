@@ -1,19 +1,19 @@
 // 需要了解的其他类型
 
-// void:没有返回值的函数的返回值
-function noop() {
-  return;
-} //ts 默认推断返回void
+// // void:没有返回值的函数的返回值
+// function noop() {
+//   return;
+// } //ts 默认推断返回void
 
-// unknown:代表任何值，与any类型类似，但更安全，ts不允许对unknown类型进行任何操作
-// function f1(a: any) {
-//   return a.b();
-// }
-// function f2(a: unknown) {
-//   return a.b(); //error 对象的类型为 "unknown"
-// }
+// // // unknown:代表任何值，与any类型类似，但更安全，ts不允许对unknown类型进行任何操作
+// // function f1(a: any) {
+// //   return a.b();
+// // }
+// // function f2(a: unknown) {
+// //   return a.b(); //error 对象的类型为 "unknown"
+// // }
 
-// never: 永远不会被观察到值
+// // never: 永远不会被观察到值
 // function f1(a: string | number) {
 //   if (typeof a === "string") {
 //     return a.length;
@@ -32,7 +32,7 @@ function noop() {
 //   while (true) {}
 // }
 
-// Function:总是可以被调用的类型，但调用的永远返回any
+// // Function:总是可以被调用的类型，但调用的永远返回any
 // function doSomething(f: Function) {
 //   return f(1, 2, 3);
 // }
